@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import FetchUsers from './components/FetchUsers/FetchUsers';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+
+ReactDOM.createRoot(document.getElementById('root')).render(<FetchUsers />);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
