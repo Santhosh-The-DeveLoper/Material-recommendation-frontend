@@ -15,7 +15,7 @@ const Login = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/login', form);
+      const res = await axios.post('https://material-recommendation-backend.vercel.app/api/login', form);
       if (res.data.status === 'success') {
         setMessage('Login successful!');
         navigate('/dashboard');

@@ -1,32 +1,3 @@
-// import { useState } from "react";
-// import axios from "axios";
-// import { Link } from "react-router-dom";
-
-// function Register() {
-//     const [form, setForm] = useState({ username: "", email: "", password: "" });
-
-//     const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
-
-//     const handleSubmit = async (e) => {
-//         e.preventDefault();
-//         const res = await axios.post("http://localhost:5000/register", form);
-//         alert(res.data.message);
-//     };
-
-//     return (
-//         <form onSubmit={handleSubmit}>
-//             <input type="text" name="username" placeholder="Username" onChange={handleChange} required />
-//             <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
-//             <input type="password" name="password" placeholder="Password" onChange={handleChange} required />
-//             <button type="submit">Register</button>
-//             <Link to="/login"><button type="submit">Login</button></Link>
-//         </form>
-//     );
-// }
-
-// export default Register;
-
-
 import { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -42,7 +13,7 @@ function Register() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:5000/register", form);
+            const response = await axios.post("https://material-recommendation-backend.vercel.app/register", form);
             alert(response.data.message);
         } catch (error) {
             alert("Registration failed. Please try again.");

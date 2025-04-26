@@ -5,7 +5,7 @@ function UserList() {
   const [users, setUsers] = useState([]);
 
   const fetchUsers = () => {
-    fetch("http://127.0.0.1:5000/users")
+    fetch("https://material-recommendation-backend.vercel.app/users")
       .then((res) => res.json())
       .then((data) => {
         setUsers(data);
@@ -15,7 +15,7 @@ function UserList() {
 
   const handleDelete = (id) => {
     if (window.confirm("Are you sure you want to delete this user?")) {
-      fetch(`http://127.0.0.1:5000/users/${id}`, {
+      fetch(`https://material-recommendation-backend.vercel.app/users/${id}`, {
         method: "DELETE",
       })
         .then((res) => {

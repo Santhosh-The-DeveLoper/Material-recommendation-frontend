@@ -27,9 +27,9 @@ function MaterialForm({ onSubmit, material, onCancel }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (form._id) {
-      await axios.put(`http://localhost:5000/materials/${form._id}`, form);
+      await axios.put(`https://material-recommendation-backend.vercel.app/materials/${form._id}`, form);
     } else {
-      await axios.post("http://localhost:5000/materials", form);
+      await axios.post("https://material-recommendation-backend.vercel.app/materials", form);
     }
     onSubmit();
   };

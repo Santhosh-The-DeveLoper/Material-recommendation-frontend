@@ -13,13 +13,13 @@ function MaterialList() {
   }, []);
 
   const fetchMaterials = async () => {
-    const res = await axios.get("http://localhost:5000/materials");
+    const res = await axios.get("https://material-recommendation-backend.vercel.app/materials");
     setMaterials(res.data);
   };
 
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this material?")) {
-      await axios.delete(`http://localhost:5000/materials/${id}`);
+      await axios.delete(`https://material-recommendation-backend.vercel.app/materials/${id}`);
       fetchMaterials();
     }
   };
