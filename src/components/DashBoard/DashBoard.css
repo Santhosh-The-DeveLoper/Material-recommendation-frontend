@@ -16,7 +16,7 @@ html {
     font-family: 'Poppins', sans-serif;
     background-color: #f0f0f0;
     color: #333;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("C:\Users\attis\OneDrive\Desktop\Track3d-Project\frontend\src\components\Assets\background2.jpg") no-repeat center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../Assets/background2.jpg") no-repeat center/cover;
 }
 
 .nav {

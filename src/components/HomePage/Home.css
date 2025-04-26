@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     height: 55rem;
-    background:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("C:\Users\attis\OneDrive\Desktop\reactproject\frontend\src\components\Assets\bg2.jpg");
+    background:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../Assets/bg2.jpg");
     background-size: cover;
     background-position: center;
     margin-bottom: 3rem;
