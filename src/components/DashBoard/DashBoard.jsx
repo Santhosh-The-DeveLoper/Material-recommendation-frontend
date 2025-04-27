@@ -18,7 +18,7 @@ const AdminDashboard = () => {
         <h3>Welcome Admin</h3>
         <br />
         <br />
-        <h1>AI Construction Material Recommendation System</h1>
+        <h1>Construction Material Recommendation System</h1>
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ const WelcomePage = () => {
         <source src={videoFile} type="video/mp4" />
       </video>
       <h1>Welcome!</h1>
-      <h1>AI Construction Material Recommendation System</h1>
+      <h1>Construction Material Recommendation System</h1>
       <div className="button">
         <Link to="/adminlogin">
         <button className="blob-btn">
