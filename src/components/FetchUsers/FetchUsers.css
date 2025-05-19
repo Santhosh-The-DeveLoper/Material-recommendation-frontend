@@ -50,6 +50,12 @@
     color: #ff6347;
 }
 
+.delete-btn:hover {
+  color: #000;
+  background-color: #f00e0e;
+}
+
+
 
 
 @media (max-width: 1024px) {
